@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Google Test Suite]" parallel="none">
+  <parameter name="password" value="Admin@123456789 "/>
+  <parameter name="emailSend" value="first@gmail.com"/>
+  <parameter name="platformVersion" value="5.1.1"/>
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="emailTo" value="second@gmail.com"/>
+  <parameter name="deviceName" value="Nexus 5"/>
+  <test name="Google Tests Nexus 5(failed)" parallel="none" preserve-order="true">
+    <parameter name="password" value="Admin@123456789 "/>
+    <parameter name="emailSend" value="first@gmail.com"/>
+    <parameter name="platformVersion" value="5.1.1"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="emailTo" value="second@gmail.com"/>
+    <parameter name="deviceName" value="Nexus 5"/>
+    <classes>
+      <class name="google.GoogleTests">
+        <methods>
+          <include name="GoogleLogin_Valid"/>
+          <include name="GoogleLogin_Invalid"/>
+          <include name="GoogleComposeEmail"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- google.GoogleTests -->
+    </classes>
+  </test> <!-- Google Tests Nexus 5(failed) -->
+</suite> <!-- Failed suite [Google Test Suite] -->
