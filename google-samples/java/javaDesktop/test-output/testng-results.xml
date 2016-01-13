@@ -2,50 +2,53 @@
 <testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Google Test Suite" duration-ms="42204" started-at="2016-01-09T14:52:59Z" finished-at="2016-01-09T14:53:41Z">
+  <suite name="Google Test Suite" duration-ms="50014" started-at="2016-01-13T23:07:36Z" finished-at="2016-01-13T23:08:26Z">
     <groups>
     </groups>
-    <test name="Google Tests" duration-ms="42204" started-at="2016-01-09T14:52:59Z" finished-at="2016-01-09T14:53:41Z">
+    <test name="Google Tests" duration-ms="50014" started-at="2016-01-13T23:07:36Z" finished-at="2016-01-13T23:08:26Z">
       <class name="google.GoogleTestsDesktop">
-        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:google.GoogleTestsDesktop@357246de]" name="Setup" is-config="true" duration-ms="3515" started-at="2016-01-09T14:52:59Z" finished-at="2016-01-09T14:53:03Z">
+        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="Setup" is-config="true" duration-ms="13586" started-at="2016-01-13T23:07:36Z" finished-at="2016-01-13T23:07:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[krypton.portal@gmail.com]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Admin@123456789]]>
+                <![CDATA[dinhducthanh91@gmail.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[krypton.portal2@gmail.com]]>
+                <![CDATA[ngoctrinh]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Admin@123456789]]>
+                <![CDATA[jslucifer.photography@gmai.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[DucThanh1991]]>
               </value>
             </param>
           </params>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="GoogleLogin_Invalid()[pri:1, instance:google.GoogleTestsDesktop@357246de]" name="GoogleLogin_Invalid" duration-ms="13767" started-at="2016-01-09T14:53:03Z" description="should not accept empty email or invalid email" finished-at="2016-01-09T14:53:16Z">
-        </test-method> <!-- GoogleLogin_Invalid -->
-        <test-method status="FAIL" signature="GoogleLogin_Valid()[pri:2, instance:google.GoogleTestsDesktop@357246de]" name="GoogleLogin_Valid" duration-ms="23527" started-at="2016-01-09T14:53:16Z" description="should accept valid credentials" finished-at="2016-01-09T14:53:40Z">
+        <test-method status="FAIL" signature="GoogleLogin_Invalid()[pri:1, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleLogin_Invalid" duration-ms="7685" started-at="2016-01-13T23:07:49Z" description="should not accept empty email or invalid email" finished-at="2016-01-13T23:07:57Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected:<false> but was:<true>]]>
+              <![CDATA[expected:<Please enter your email.> but was:<Vui lòng nhập email của bạn.>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+              <![CDATA[java.lang.AssertionError: expected:<Please enter your email.> but was:<Vui lòng nhập email của bạn.>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:281)
-	at org.testng.Assert.assertEquals(Assert.java:291)
-	at google.GoogleTestsDesktop.GoogleLogin_Valid(GoogleTestsDesktop.java:77)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at google.GoogleTestsDesktop.GoogleLogin_Invalid(GoogleTestsDesktop.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -73,33 +76,31 @@
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- GoogleLogin_Invalid -->
+        <test-method status="PASS" signature="GoogleLogin_Valid()[pri:2, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleLogin_Valid" duration-ms="28207" started-at="2016-01-13T23:07:57Z" description="should accept valid credentials" finished-at="2016-01-13T23:08:25Z">
         </test-method> <!-- GoogleLogin_Valid -->
-        <test-method status="FAIL" signature="GoogleComposeEmail()[pri:3, instance:google.GoogleTestsDesktop@357246de]" name="GoogleComposeEmail" duration-ms="47" started-at="2016-01-09T14:53:40Z" description="should compose email successfully by Gmail1" finished-at="2016-01-09T14:53:40Z">
+        <test-method status="FAIL" signature="GoogleComposeEmail()[pri:3, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleComposeEmail" duration-ms="21" started-at="2016-01-13T23:08:25Z" description="should compose email successfully by Gmail1" finished-at="2016-01-13T23:08:25Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
-  (Session info: chrome=47.0.2526.106)
-  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 45 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+Command duration or timeout: 17 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'JosephThanh-PC', ip: '192.168.10.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\JOSEPH~1\AppData\Local\Temp\scoped_dir5168_22602}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=47.0.2526.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 90f176989c53395024a14cdf4cdc6f8a
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c7101acb-c3c9-4b80-a1e1-a692b34c47fd
 *** Element info: {Using=xpath, value=//div[text()='COMPOSE']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
-  (Session info: chrome=47.0.2526.106)
-  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 45 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+Command duration or timeout: 17 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'JosephThanh-PC', ip: '192.168.10.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\JOSEPH~1\AppData\Local\Temp\scoped_dir5168_22602}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=47.0.2526.106, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 90f176989c53395024a14cdf4cdc6f8a
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c7101acb-c3c9-4b80-a1e1-a692b34c47fd
 *** Element info: {Using=xpath, value=//div[text()='COMPOSE']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -110,7 +111,7 @@ Session ID: 90f176989c53395024a14cdf4cdc6f8a
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
-	at google.GoogleTestsDesktop.GoogleComposeEmail(GoogleTestsDesktop.java:83)
+	at google.GoogleTestsDesktop.GoogleComposeEmail(GoogleTestsDesktop.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -135,11 +136,21 @@ Session ID: 90f176989c53395024a14cdf4cdc6f8a
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10668)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
         </test-method> <!-- GoogleComposeEmail -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:google.GoogleTestsDesktop@357246de]" name="Teardown" is-config="true" duration-ms="1329" started-at="2016-01-09T14:53:40Z" finished-at="2016-01-09T14:53:41Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="Teardown" is-config="true" duration-ms="500" started-at="2016-01-13T23:08:25Z" finished-at="2016-01-13T23:08:26Z">
         </test-method> <!-- Teardown -->
       </class> <!-- google.GoogleTestsDesktop -->
     </test> <!-- Google Tests -->

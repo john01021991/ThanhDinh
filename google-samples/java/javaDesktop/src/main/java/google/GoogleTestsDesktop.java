@@ -13,7 +13,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class GoogleTestsDesktop {
-	private RemoteWebDriver driver = new FirefoxDriver();
+	private RemoteWebDriver driver = null;
 	
 	final static String GOOGLE_URL = "https://mail.google.com";
 	final static String GOOGLE_URL_HOMEPAGE = "https://mail.google.com/mail/u/0/#inbox";
