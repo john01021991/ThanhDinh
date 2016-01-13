@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Google Test Suite]" parallel="none">
-  <parameter name="passwordEmailTo" value="Admin@123456789"/>
-  <parameter name="emailSend" value="krypton.portal@gmail.com"/>
+  <parameter name="passwordEmailTo" value="DucThanh1991"/>
+  <parameter name="emailSend" value="dinhducthanh91@gmail.com"/>
   <parameter name="browserName" value="Chrome"/>
-  <parameter name="passwordEmailSend" value="Admin@123456789"/>
-  <parameter name="emailTo" value="krypton.portal2@gmail.com"/>
+  <parameter name="passwordEmailSend" value="ngoctrinh"/>
+  <parameter name="emailTo" value="jslucifer.photography@gmail.com"/>
   <test name="Google Tests(failed)" parallel="none" preserve-order="true">
-    <parameter name="passwordEmailTo" value="Admin@123456789"/>
-    <parameter name="emailSend" value="krypton.portal@gmail.com"/>
+    <parameter name="passwordEmailTo" value="DucThanh1991"/>
+    <parameter name="emailSend" value="dinhducthanh91@gmail.com"/>
     <parameter name="browserName" value="Chrome"/>
-    <parameter name="passwordEmailSend" value="Admin@123456789"/>
-    <parameter name="emailTo" value="krypton.portal2@gmail.com"/>
+    <parameter name="passwordEmailSend" value="ngoctrinh"/>
+    <parameter name="emailTo" value="jslucifer.photography@gmail.com"/>
     <classes>
       <class name="google.GoogleTestsDesktop">
         <methods>
           <include name="Setup"/>
           <include name="GoogleComposeEmail"/>
-          <include name="Teardown"/>
+          <include name="GoogleLogin_Invalid"/>
           <include name="GoogleLogin_Valid"/>
         </methods>
       </class> <!-- google.GoogleTestsDesktop -->
