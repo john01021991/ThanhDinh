@@ -16,10 +16,10 @@ public class GoogleTestsDesktop {
 	final static String TRASH_URL = "https://mail.google.com/mail/u/0/#trash";
 	final static String SENT_URL = "https://mail.google.com/mail/u/0/#sent";
 	
-	static String EMAIL_ADDRESS1 = "krypton.portal@gmail.com";
-	static String EMAIL_ADDRESS2 = "krypton.portal2@gmail.com";
-	static String PASSWORDEMAILSEND = "Admin@123456789";
-	static String PASSWORDEMAILTO = "Admin@123456789";
+	static String EMAIL_ADDRESS1 = "dinhducthanh91@gmail.com";
+	static String EMAIL_ADDRESS2 = "jslucifer.photography@gmail.com";
+	static String PASSWORDEMAILSEND = "ngoctrinh";
+	static String PASSWORDEMAILTO = "DucThanh1991";
 	final static String SUBJECT1 = "It is a subject";
 	final static String BODY1 = "It is a body";
 	final static String MSG_NOEMAIL = "No conversations in the Trash. Who needs to delete when you have so much storage?!";

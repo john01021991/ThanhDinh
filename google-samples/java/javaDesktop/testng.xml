@@ -3,10 +3,10 @@
 
  <test name="Google Tests" >
   <parameter name="browserName" value="Chrome"/>
-     <parameter name="emailSend" value="krypton.portal@gmail.com"/>
-      <parameter name="passwordEmailSend" value="Admin@123456789"/>
-     <parameter name="emailTo" value="krypton.portal2@gmail.com"/>
-     <parameter name="passwordEmailTo" value="Admin@123456789"/>
+     <parameter name="emailSend" value="dinhducthanh91@gmail.com"/>
+      <parameter name="passwordEmailSend" value="ngoctrinh"/>
+     <parameter name="emailTo" value="jslucifer.photography@gmail.com"/>
+     <parameter name="passwordEmailTo" value="DucThanh1991"/>
     <classes>
       <class name="google.GoogleTestsDesktop"/>
     </classes>
