@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" total="3" passed="0">
+<testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Google Test Suite" duration-ms="152" started-at="2016-01-13T21:32:58Z" finished-at="2016-01-13T21:32:58Z">
+  <suite name="Google Test Suite" duration-ms="49225" started-at="2016-01-13T21:50:21Z" finished-at="2016-01-13T21:51:10Z">
     <groups>
     </groups>
-    <test name="Google Tests" duration-ms="152" started-at="2016-01-13T21:32:58Z" finished-at="2016-01-13T21:32:58Z">
+    <test name="Google Tests" duration-ms="49225" started-at="2016-01-13T21:50:21Z" finished-at="2016-01-13T21:51:10Z">
       <class name="google.GoogleTestsDesktop">
-        <test-method status="FAIL" signature="Setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:google.GoogleTestsDesktop@357246de]" name="Setup" is-config="true" duration-ms="0" started-at="2016-01-13T21:32:58Z" finished-at="2016-01-13T21:32:58Z">
+        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:google.GoogleTestsDesktop@357246de]" name="Setup" is-config="true" duration-ms="13149" started-at="2016-01-13T21:50:21Z" finished-at="2016-01-13T21:50:34Z">
           <params>
             <param index="0">
               <value>
@@ -30,32 +30,32 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
+        </test-method> <!-- Setup -->
+        <test-method status="FAIL" signature="GoogleLogin_Invalid()[pri:1, instance:google.GoogleTestsDesktop@357246de]" name="GoogleLogin_Invalid" duration-ms="8785" started-at="2016-01-13T21:50:34Z" description="should not accept empty email or invalid email" finished-at="2016-01-13T21:50:43Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\Joseph%20Thanh\Documents\GitHub\ThanhDinh\google-samples\java\javaDesktop\target\classes\drivers\chromedriver.exe]]>
+              <![CDATA[expected:<Please enter your email.> but was:<Vui lòng nhập email của bạn.>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Joseph%20Thanh\Documents\GitHub\ThanhDinh\google-samples\java\javaDesktop\target\classes\drivers\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:148)
-	at google.SetupChromeDriver.setupChromeDriver(SetupChromeDriver.java:46)
-	at google.GoogleTestsDesktop.Setup(GoogleTestsDesktop.java:41)
+              <![CDATA[java.lang.AssertionError: expected:<Please enter your email.> but was:<Vui lòng nhập email của bạn.>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at google.GoogleTestsDesktop.GoogleLogin_Invalid(GoogleTestsDesktop.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
@@ -70,15 +70,82 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-        </test-method> <!-- Setup -->
-        <test-method status="SKIP" signature="GoogleLogin_Invalid()[pri:1, instance:google.GoogleTestsDesktop@357246de]" name="GoogleLogin_Invalid" duration-ms="1" started-at="2016-01-13T21:32:58Z" description="should not accept empty email or invalid email" finished-at="2016-01-13T21:32:58Z">
+          </exception> <!-- java.lang.AssertionError -->
         </test-method> <!-- GoogleLogin_Invalid -->
-        <test-method status="SKIP" signature="GoogleLogin_Valid()[pri:2, instance:google.GoogleTestsDesktop@357246de]" name="GoogleLogin_Valid" duration-ms="1" started-at="2016-01-13T21:32:58Z" description="should accept valid credentials" finished-at="2016-01-13T21:32:58Z">
+        <test-method status="PASS" signature="GoogleLogin_Valid()[pri:2, instance:google.GoogleTestsDesktop@357246de]" name="GoogleLogin_Valid" duration-ms="26762" started-at="2016-01-13T21:50:43Z" description="should accept valid credentials" finished-at="2016-01-13T21:51:09Z">
         </test-method> <!-- GoogleLogin_Valid -->
-        <test-method status="SKIP" signature="GoogleComposeEmail()[pri:3, instance:google.GoogleTestsDesktop@357246de]" name="GoogleComposeEmail" duration-ms="0" started-at="2016-01-13T21:32:58Z" description="should compose email successfully by Gmail1" finished-at="2016-01-13T21:32:58Z">
+        <test-method status="FAIL" signature="GoogleComposeEmail()[pri:3, instance:google.GoogleTestsDesktop@357246de]" name="GoogleComposeEmail" duration-ms="132" started-at="2016-01-13T21:51:09Z" description="should compose email successfully by Gmail1" finished-at="2016-01-13T21:51:09Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: aa0a42b0-fad0-445a-b4f7-b3fc01ce7b7d
+*** Element info: {Using=xpath, value=//div[text()='COMPOSE']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: aa0a42b0-fad0-445a-b4f7-b3fc01ce7b7d
+*** Element info: {Using=xpath, value=//div[text()='COMPOSE']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at google.GoogleTestsDesktop.GoogleComposeEmail(GoogleTestsDesktop.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10668)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
         </test-method> <!-- GoogleComposeEmail -->
-        <test-method status="SKIP" signature="Teardown()[pri:0, instance:google.GoogleTestsDesktop@357246de]" name="Teardown" is-config="true" duration-ms="0" started-at="2016-01-13T21:32:58Z" finished-at="2016-01-13T21:32:58Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:google.GoogleTestsDesktop@357246de]" name="Teardown" is-config="true" duration-ms="367" started-at="2016-01-13T21:51:09Z" finished-at="2016-01-13T21:51:10Z">
         </test-method> <!-- Teardown -->
       </class> <!-- google.GoogleTestsDesktop -->
     </test> <!-- Google Tests -->

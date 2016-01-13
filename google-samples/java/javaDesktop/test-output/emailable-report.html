@@ -29,49 +29,64 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Google Tests</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">0</td><td class="numi">0,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Google Tests</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">49,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Google Tests &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">google.GoogleTestsDesktop<td><a href="#m1"><b>Setup</b>  </a></td><td class="numi">1</td><td>1452695578528</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Google Tests &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">google.GoogleTestsDesktop<td><a href="#m2"><b>Teardown</b>  </a></td><td class="numi">1</td><td>1452695578677</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Google Tests &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="3">google.GoogleTestsDesktop<td><a href="#m3"><b>GoogleLogin_Invalid</b>  ("should not accept empty email or invalid email")</a></td><td class="numi">1</td><td>1452695578674</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m4"><b>GoogleLogin_Valid</b>  ("should accept valid credentials")</a></td><td class="numi">1</td><td>1452695578675</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m5"><b>GoogleComposeEmail</b>  ("should compose email successfully by Gmail1")</a></td><td class="numi">1</td><td>1452695578676</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Google Tests &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">google.GoogleTestsDesktop<td><a href="#m1"><b>GoogleLogin_Invalid</b>  ("should not accept empty email or invalid email")</a></td><td class="numi">1</td><td>1452696634291</td><td class="numi">8785</td></tr><tr class="failedodd"><td><a href="#m2"><b>GoogleComposeEmail</b>  ("should compose email successfully by Gmail1")</a></td><td class="numi">1</td><td>1452696669843</td><td class="numi">132</td></tr>
+<tr><th colspan="4">Google Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">google.GoogleTestsDesktop<td><a href="#m3"><b>GoogleLogin_Valid</b>  ("should accept valid credentials")</a></td><td class="numi">1</td><td>1452696643079</td><td class="numi">26762</td></tr>
 </table>
 <h1>Google Tests</h1>
-<a id="m1"></a><h2>google.GoogleTestsDesktop:Setup</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th><th style="padding-left:1em;padding-right:1em">Parameter #4</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">dinhducthanh91@gmail.com</td>
-<td style="padding-left:.5em;padding-right:2em">ngoctrinh</td>
-<td style="padding-left:.5em;padding-right:2em">jslucifer.photography@gmail.com</td>
-<td style="padding-left:.5em;padding-right:2em">DucThanh1991</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="4">
-<p>The driver executable does not exist: C:\Users\Joseph%20Thanh\Documents\GitHub\ThanhDinh\google-samples\java\javaDesktop\target\classes\drivers\chromedriver.exe</p>
-com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-<br/>at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-<br/>at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-<br/>at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:148)
-<br/>at google.SetupChromeDriver.setupChromeDriver(SetupChromeDriver.java:46)
-<br/>at google.GoogleTestsDesktop.Setup(GoogleTestsDesktop.java:41)
-<br/>23 lines not shown
-</td></tr>
-</table>
+<a id="m1"></a><h2>google.GoogleTestsDesktop:GoogleComposeEmail</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;COMPOSE&apos;]&quot;}
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;JosephThanh-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: aa0a42b0-fad0-445a-b4f7-b3fc01ce7b7d
+*** Element info: {Using=xpath, value=//div[text()=&apos;COMPOSE&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+<br/>at google.GoogleTestsDesktop.GoogleComposeEmail(GoogleTestsDesktop.java:87)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;COMPOSE&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;JosephThanh-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10668)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous1873778845311835559webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+<br/>1 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>google.GoogleTestsDesktop:Teardown</h2>
+<a id="m2"></a><h2>google.GoogleTestsDesktop:GoogleLogin_Invalid</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;Please enter your email.&gt; but was:&lt;Vui l?ng nh?p email c?a b?n.&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at google.GoogleTestsDesktop.GoogleLogin_Invalid(GoogleTestsDesktop.java:67)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>google.GoogleTestsDesktop:GoogleLogin_Invalid</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>google.GoogleTestsDesktop:GoogleLogin_Valid</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>google.GoogleTestsDesktop:GoogleComposeEmail</h2>
+<a id="m3"></a><h2>google.GoogleTestsDesktop:GoogleLogin_Valid</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

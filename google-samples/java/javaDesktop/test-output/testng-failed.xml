@@ -17,8 +17,8 @@
         <methods>
           <include name="Setup"/>
           <include name="GoogleComposeEmail"/>
+          <include name="Teardown"/>
           <include name="GoogleLogin_Invalid"/>
-          <include name="GoogleLogin_Valid"/>
         </methods>
       </class> <!-- google.GoogleTestsDesktop -->
     </classes>
