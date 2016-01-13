@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Google_Test_Suite">
-              <span class="suite-name border-skipped">Google Test Suite</span>
+              <span class="suite-name border-failed">Google Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Google_Test_Suite">
-                    <span>C:\Users\Joseph Thanh\Documents\GitHub\ThanhDinh\google-samples\java\javaDesktop\testng.xml</span>
+                    <span>D:\Programming\Automation\ThanhDinh\google-samples\java\javaDesktop\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,31 +90,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  3 skipped,  </span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Google_Test_Suite" class="hide-methods skipped suite-Google_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Google_Test_Suite -->
-                      <a href="#" panel-name="suite-Google_Test_Suite" class="show-methods skipped suite-Google_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Google_Test_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Google_Test_Suite" class="hide-methods failed suite-Google_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Google_Test_Suite -->
+                      <a href="#" panel-name="suite-Google_Test_Suite" class="show-methods failed suite-Google_Test_Suite"> (show)</a> <!-- show-methods failed suite-Google_Test_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Google_Test_Suite">
+                    <div class="method-list-content failed suite-Google_Test_Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Google_Test_Suite" title="google.GoogleTestsDesktop" hash-for-method="GoogleComposeEmail">GoogleComposeEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Google_Test_Suite" title="google.GoogleTestsDesktop" hash-for-method="GoogleLogin_Invalid">GoogleLogin_Invalid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Google_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Google_Test_Suite" class="hide-methods passed suite-Google_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Google_Test_Suite -->
+                      <a href="#" panel-name="suite-Google_Test_Suite" class="show-methods passed suite-Google_Test_Suite"> (show)</a> <!-- show-methods passed suite-Google_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Google_Test_Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Google_Test_Suite" title="google.GoogleTestsDesktop" hash-for-method="GoogleLogin_Valid">GoogleLogin_Valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Google_Test_Suite -->
+                    </div> <!-- method-list-content passed suite-Google_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,9 +135,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Google_Test_Suite" class="panel Google_Test_Suite">
-          <div class="suite-Google_Test_Suite-class-skipped">
+          <div class="suite-Google_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">google.GoogleTestsDesktop</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -137,6 +146,16 @@
                   <a name="GoogleComposeEmail">
                   </a> <!-- GoogleComposeEmail -->
                   <span class="method-name">GoogleComposeEmail</span>
+                  <div class="stack-trace"><b>"Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: aa0a42b0-fad0-445a-b4f7-b3fc01ce7b7d
+*** Element info: {Using=xpath, value=//div[text()='COMPOSE']}"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br>java.lang.reflect.Constructor.newInstance(Unknown Source)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)<br>google.GoogleTestsDesktop.GoogleComposeEmail(GoogleTestsDesktop.java:87)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)<br>
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -144,8 +163,18 @@
                   <a name="GoogleLogin_Invalid">
                   </a> <!-- GoogleLogin_Invalid -->
                   <span class="method-name">GoogleLogin_Invalid</span>
+                  <div class="stack-trace"><b>"expected:<Please enter your email.> but was:<Vui l?ng nh?p email c?a b?n.>"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:171)<br>org.testng.Assert.assertEquals(Assert.java:181)<br>google.GoogleTestsDesktop.GoogleLogin_Invalid(GoogleTestsDesktop.java:67)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)<br>
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Google_Test_Suite-class-failed -->
+          <div class="suite-Google_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">google.GoogleTestsDesktop</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="GoogleLogin_Valid">
@@ -154,11 +183,11 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Google_Test_Suite-class-skipped -->
+          </div> <!-- suite-Google_Test_Suite-class-passed -->
         </div> <!-- panel Google_Test_Suite -->
         <div panel-name="test-xml-Google_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Joseph Thanh\Documents\GitHub\ThanhDinh\google-samples\java\javaDesktop\testng.xml</span>
+            <span class="header-content">D:\Programming\Automation\ThanhDinh\google-samples\java\javaDesktop\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -214,22 +243,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GoogleLogin_Invalid')
+data.setCell(0, 1, 'GoogleLogin_Valid')
 data.setCell(0, 2, 'google.GoogleTestsDesktop')
-data.setCell(0, 3, 1);
+data.setCell(0, 3, 26762);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GoogleLogin_Valid')
+data.setCell(1, 1, 'GoogleLogin_Invalid')
 data.setCell(1, 2, 'google.GoogleTestsDesktop')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 8785);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'GoogleComposeEmail')
 data.setCell(2, 2, 'google.GoogleTestsDesktop')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 132);
 window.suiteTableData['Google_Test_Suite']= { tableData: data, tableDiv: 'times-div-Google_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 ms</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Google_Test_Suite">
               </div> <!-- times-div-Google_Test_Suite -->
             </div> <!-- times-div -->
@@ -257,23 +286,29 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">google.GoogleTestsDesktop</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Setup(dinhducthanh91@gmail.com, ngoctrinh, jslucifer.photography@gmail.com, DucThanh1991)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">GoogleLogin_Invalid</span>
-                <span class="method-start">146 ms</span>
+                <span class="method-start">13155 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GoogleLogin_Valid</span>
-                <span class="method-start">147 ms</span>
+                <span class="method-start">21943 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">GoogleComposeEmail</span>
-                <span class="method-start">148 ms</span>
+                <span class="method-start">48707 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">48855 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
