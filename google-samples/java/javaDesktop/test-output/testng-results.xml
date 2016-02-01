@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Google Test Suite" duration-ms="50014" started-at="2016-01-13T23:07:36Z" finished-at="2016-01-13T23:08:26Z">
+  <suite name="Google Test Suite" duration-ms="131636" started-at="2016-01-29T23:04:34Z" finished-at="2016-01-29T23:06:45Z">
     <groups>
     </groups>
-    <test name="Google Tests" duration-ms="50014" started-at="2016-01-13T23:07:36Z" finished-at="2016-01-13T23:08:26Z">
+    <test name="Google Tests" duration-ms="131636" started-at="2016-01-29T23:04:34Z" finished-at="2016-01-29T23:06:45Z">
       <class name="google.GoogleTestsDesktop">
-        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="Setup" is-config="true" duration-ms="13586" started-at="2016-01-13T23:07:36Z" finished-at="2016-01-13T23:07:49Z">
+        <test-method status="PASS" signature="Setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="Setup" is-config="true" duration-ms="3116" started-at="2016-01-29T23:04:34Z" finished-at="2016-01-29T23:04:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
@@ -26,7 +26,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[jslucifer.photography@gmai.com]]>
+                <![CDATA[jslucifer.photography@gmail.com]]>
               </value>
             </param>
             <param index="4">
@@ -36,121 +36,13 @@
             </param>
           </params>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="GoogleLogin_Invalid()[pri:1, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleLogin_Invalid" duration-ms="7685" started-at="2016-01-13T23:07:49Z" description="should not accept empty email or invalid email" finished-at="2016-01-13T23:07:57Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected:<Please enter your email.> but was:<Vui lòng nhập email của bạn.>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<Please enter your email.> but was:<Vui lòng nhập email của bạn.>
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at org.testng.Assert.assertEquals(Assert.java:181)
-	at google.GoogleTestsDesktop.GoogleLogin_Invalid(GoogleTestsDesktop.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
-	at org.testng.TestNG.run(TestNG.java:1025)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="GoogleLogin_Invalid()[pri:1, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleLogin_Invalid" duration-ms="12012" started-at="2016-01-29T23:04:37Z" description="should not accept empty email or invalid email" finished-at="2016-01-29T23:04:49Z">
         </test-method> <!-- GoogleLogin_Invalid -->
-        <test-method status="PASS" signature="GoogleLogin_Valid()[pri:2, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleLogin_Valid" duration-ms="28207" started-at="2016-01-13T23:07:57Z" description="should accept valid credentials" finished-at="2016-01-13T23:08:25Z">
+        <test-method status="PASS" signature="GoogleLogin_Valid()[pri:2, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleLogin_Valid" duration-ms="23427" started-at="2016-01-29T23:04:49Z" description="should accept valid credentials" finished-at="2016-01-29T23:05:12Z">
         </test-method> <!-- GoogleLogin_Valid -->
-        <test-method status="FAIL" signature="GoogleComposeEmail()[pri:3, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleComposeEmail" duration-ms="21" started-at="2016-01-13T23:08:25Z" description="should compose email successfully by Gmail1" finished-at="2016-01-13T23:08:25Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c7101acb-c3c9-4b80-a1e1-a692b34c47fd
-*** Element info: {Using=xpath, value=//div[text()='COMPOSE']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c7101acb-c3c9-4b80-a1e1-a692b34c47fd
-*** Element info: {Using=xpath, value=//div[text()='COMPOSE']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
-	at google.GoogleTestsDesktop.GoogleComposeEmail(GoogleTestsDesktop.java:95)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:768)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
-	at org.testng.TestNG.run(TestNG.java:1025)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[text()='COMPOSE']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'JosephThanh-PC', ip: '192.168.0.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10668)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/JOSEPH~1/AppData/Local/Temp/anonymous5405784921082217299webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="GoogleComposeEmail()[pri:3, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="GoogleComposeEmail" duration-ms="91768" started-at="2016-01-29T23:05:12Z" description="should compose email successfully by Gmail1" finished-at="2016-01-29T23:06:44Z">
         </test-method> <!-- GoogleComposeEmail -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="Teardown" is-config="true" duration-ms="500" started-at="2016-01-13T23:08:25Z" finished-at="2016-01-13T23:08:26Z">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:google.GoogleTestsDesktop@3ac3fd8b]" name="Teardown" is-config="true" duration-ms="1299" started-at="2016-01-29T23:06:44Z" finished-at="2016-01-29T23:06:45Z">
         </test-method> <!-- Teardown -->
       </class> <!-- google.GoogleTestsDesktop -->
     </test> <!-- Google Tests -->
