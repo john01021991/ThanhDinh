@@ -150,7 +150,8 @@ public class GoogleTestsDesktop {
 		getSentEmail = driver.findElementByXPath("//h3[@class='iw']/span[1]").getAttribute("email");
 		driver.findElementByXPath("//div[@class='ajy']").click();
 		Sleep(2000);
-		getToEmail = driver.findElementByXPath("//table[@class='ajC']/tbody/tr[2]/td[2]/span/span").getAttribute("email");
+		getToEmail = driver.findElementByXPath("//table[@class='ajC']/tbody/tr[2]/td[2]/span/span")
+				.getAttribute("email");
 
 		Assert.assertEquals(SUBJECT1, getSubject);
 		Assert.assertEquals(BODY1, getBody);
@@ -178,9 +179,7 @@ public class GoogleTestsDesktop {
 		Sleep(3000);
 		driver.findElementByXPath("//div[contains(@class,'oZ-jc T-Jo J-J5-Ji') and @role='checkbox'][1]").click();
 		Sleep(4000);
-		driver.findElementByXPath(
-				".//*[@id=':5']/div[2]/div[1]/div[1]/div/div/div[2]/div[3]")
-				.click();
+		driver.findElementByXPath(".//*[@id=':5']/div[2]/div[1]/div[1]/div/div/div[2]/div[3]").click();
 		Sleep(3000);
 		driver.findElementByXPath("//button[@name='ok' and text()='OK']").click();
 		Sleep(2000);
@@ -202,11 +201,12 @@ public class GoogleTestsDesktop {
 		Sleep(2000);
 		driver.findElementByXPath(".//*[@id=':5']/div[3]/div[1]/div[1]/div/div/div[2]/div").click();
 		Sleep(2000);
-		String getNoEmailMsg = driver.findElementByXPath("html/body/div[7]/div[3]/div/div[1]/div[5]/div[1]/div[2]/div[3]/div/div/div[2]/span").getText();
+		String getNoEmailMsg = driver.findElementByXPath(
+				"html/body/div[7]/div[3]/div/div[1]/div[5]/div[1]/div[2]/div[3]/div/div/div[2]/span").getText();
 
 		Assert.assertEquals(MSG_NOEMAIL, getNoEmailMsg);
 	}
-	
+
 	private void Delete_Trash1_Msg() {
 		driver.get(TRASH_URL);
 		Sleep(5000);
@@ -214,7 +214,8 @@ public class GoogleTestsDesktop {
 		Sleep(2000);
 		driver.findElementByXPath(".//*[@id=':5']/div[2]/div[1]/div[1]/div/div/div[2]/div").click();
 		Sleep(2000);
-		String getNoEmailMsg = driver.findElementByXPath("html/body/div[7]/div[3]/div/div[1]/div[5]/div[1]/div[2]/div[3]/div/div/div[2]/span").getText();
+		String getNoEmailMsg = driver.findElementByXPath(
+				"html/body/div[7]/div[3]/div/div[1]/div[5]/div[1]/div[2]/div[3]/div/div/div[2]/span").getText();
 
 		Assert.assertEquals(MSG_NOEMAIL, getNoEmailMsg);
 	}
